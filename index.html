@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+    <link rel="stylesheet" href="./CSS/general.css">
+    <script src="https://kit.fontawesome.com/cb2a722609.js" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</head>
+<body>
+
+    <header class="header" id="header"> <!-- Barra superior (Navegación y logo) -->
+        
+        <nav class="menu">
+            <i class="fa-solid fa-angle-left"></i>
+            <ul class="nav">
+                <li class="ini"><a>Menu<i class="fa-solid fa-angle-down"></i></a>
+                    <ul>
+                <li><a href="">Inicio</a></li>
+                <li id="navproductos"><a>Productos</a></li>
+                <li><a href="#categories">Categorias<i class="fa-solid fa-angle-down"></i></a>
+                    <ul >
+                        <li id="ropa"><a>Ropa</a></li>
+                        <li id="electronica"><a>Electronica</a></li>
+                        <li id="zapatos"><a>Zapatos</a></li>
+                        <li id="muebles"><a>Muebles</a></li>
+                        <li id="varios"><a>Varios</a></li>
+                    </ul>
+                </li>
+            </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="logo"></div>
+        <div class="login">
+            <button id="login">Login</button>
+            <div id="carrito">
+            <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+
+        <section class="title">
+            <article><h1>Tienda on-line</h1></article>
+        </section>
+        <section class="hero"> <!-- Imágenes de productos -->
+            <div class="product-item" id="product1"></div>
+            <div class="product-item" id="product2"></div>
+        </section>
+        <div class="banner"> <!-- Banner publicitario -->
+            <article>
+                <h2>Tienda online con la mejor variedad</h2>
+                <button class="buttonP" id="comprarAhora">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    comprar ahora
+                </button>
+            </article>
+        </div>
+        <section class="categories" id="categories"> <!-- Sección tipo carrusel -->
+
+        </section>
+
+        <section class="gallery"> <!-- Sección galería -->
+            <div class="galleryContainer">
+            <div class="gallery-item">
+                <div class="imagen">
+                    <img src="./images/test1.jpg">
+                </div>
+                <div class="titulo">The best shop</div>
+                <div class="texto">I bought in this on-line shop and it was a greatfull experience</div>
+                <div>First consumer</div>
+            </div>
+            <div class="gallery-item">
+                <div class="imagen">
+                    <img src="./images/test2.jpg">
+                </div>
+                <div class="titulo">The best shop</div>
+                <div class="texto">A lot of products just for me this is the best on-line shop and i am in love with the desing of this page</div>
+                <div>Second consumer</div>
+            </div>
+            <div class="gallery-item">
+                <div class="imagen">
+                    <img src="./images/test3.jpg">
+                </div>
+                <div class="titulo">The best shop</div>
+                <div class="texto">¡The best experience of my life!</div>
+                <div>Last consumer</div>
+            </div>
+            </div>
+            <div class="social">
+                <div>
+                    ¡Follow us in our Social Media!
+                </div>
+                <div class="media">
+                    <i class="fa-brands fa-youtube" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
+                </div>
+            </div>
+        </section>
+        <section class="oferts">
+            <div>
+                <h2>Recibe nuestras ofertas</h2>
+                <form>
+                <input placeholder="Email...">
+                <button class="buttonP" id="correo">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Mandar correo
+                </button>
+                </form>
+            </div>
+        </section>
+        <footer class="footer"> <!-- Footer con redes sociales -->
+            <div class="social-media">
+                Ayuda
+                <a href="">ayuda</a>
+                <a href="">ayuda</a>
+                <a href="">ayuda</a>
+            </div>
+            <div class="social-media">
+                Nosotros
+                <a href="">Nosotros</a>
+                <a href="">Nosotros</a>
+                <a href="">Nosotros</a>
+            </div>
+            <div class="social-media">
+                Legal
+                <a href="">legal</a>
+                <a href="">legal</a>
+                <a href="">legal</a>
+            </div>
+            <div class="social-media">
+                Metodos de Pago
+                <div>
+                    <i class="fa-brands fa-cc-visa" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-cc-paypal" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-cc-mastercard" style="color: #ffffff;"></i>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="products" id="products">
+    
+    </div>
+    <div class="detalle" id="detalle">
+        <div id="product-container" class="product-container"></div>
+    </div>
+    <div class="contenedorcarrito" id="contenedorcarrito">
+        <div id="cart-container" class="cart-container"></div>
+    </div>
+</body>
+</html>
